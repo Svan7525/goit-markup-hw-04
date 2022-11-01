@@ -79,14 +79,13 @@ button {
 
 .link {
   text-decoration: none;
-  display: block;
-  padding: 32px 0;
 }
 
 .link-current {
   color: var(--accent-color);
   text-decoration: none;
   font-weight: 500;
+  padding: 32px 0;
 }
 
 /* header */
@@ -124,6 +123,10 @@ button {
   align-items: center;
 }
 
+.nav-link {
+  padding: 32px 0;
+}
+
 .menu-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -137,15 +140,6 @@ button {
 .header-mail {
   margin-right: 50px;
 }
-
-/* .contacts-item {
-  display: flex;
-  align-items: center;
-}
-
-.phone-link {
-  display: block;
-} */
 
 .site-nav .link,
 .contacts .mail,
@@ -172,7 +166,8 @@ button {
 .contacts .mail,
 .contacts .phone {
   color: var(--primary-text-color);
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
 }
 
@@ -187,13 +182,11 @@ button {
   padding: 200px 0;
   max-width: 1600px;
   height: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -375,18 +368,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  border-radius: 50%;
   width: 44px;
   height: 44px;
 
   color: #AFB1B8;
-  padding: 0;
 }
 
 .socials-link:hover,
 .socials-link:focus {
   color: #fff;
-  border-radius: 50%;
   background-color: #2196F3;
 }
 
@@ -418,13 +409,8 @@ button {
 }
 
 .clients-item {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   width: 170px;
   height: 92px;
-  border: 1px solid #AFB1B8;
-  border-radius: 4px;
 }
 
 .clients-link {
@@ -435,18 +421,13 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid currentColor;
+  border-radius: 4px;
 }
 
 .clients-icon {
   fill: currentColor;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.clients-item:hover {
-  border: 1px solid #2196F3;
-  color: #2196F3;
 }
 
 .clients-link:hover {
@@ -611,10 +592,11 @@ footer {
 
 .works-link {
   text-decoration: none;
+  display: block;
 }
 
-.works-item:hover,
-.works-item:focus {
+.works-link:hover,
+.works-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
